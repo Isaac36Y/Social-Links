@@ -8,7 +8,7 @@
 body {
     background-color: var(--bg);
     font-family: "Inter", Arial, sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
 }
@@ -22,7 +22,7 @@ main {
 }
 
 .container {
-    max-width: 350px;
+    max-width: 400px;
     height: auto;
     margin: 0;
     background-color: var(--card-bg);
@@ -97,4 +97,11 @@ main {
     color: black;
     transform: scale(1.05);
 }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }
