@@ -14,8 +14,9 @@ main {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
+    margin: 0;
     background-color: #1f1f1fff;
     color: white;
     display: flex;
@@ -28,7 +29,7 @@ main {
 .profile-pic {
     width: 6em;
     border-radius: 50%;
-    margin-top: 3em;
+    margin-top: 2.5em;
 }
 
 .my-info {
@@ -56,7 +57,7 @@ main {
 
 .socials {
     width: 75%;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 .socials * {
@@ -69,8 +70,17 @@ main {
     color: inherit;
 }
 
+
+.socials a:active {
+  background-color: #c5f82aff;
+  color: black;
+  transform: scale(1.03);
+}
+
+@media (hover: hover) and (pointer: fine) {
 .socials *:hover {
     background-color: #c5f82aff;
     color: black;
     transform: scale(1.05);
+}
 }
