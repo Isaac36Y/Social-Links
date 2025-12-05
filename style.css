@@ -1,8 +1,16 @@
+:root {
+    --bg: #141414;
+    --card-bg: #1f1f1f;
+    --button-bg: #333;
+    --accent: #c5f82a
+}
+
 body {
-    background-color: #141414ff;
+    background-color: var(--bg);
     font-family: "Inter", Arial, sans-serif;
     font-size: 14px;
-    ;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -17,7 +25,7 @@ main {
     max-width: 350px;
     height: auto;
     margin: 0;
-    background-color: #1f1f1fff;
+    background-color: var(--card-bg);
     color: white;
     display: flex;
     justify-content: center;
@@ -45,7 +53,7 @@ main {
 
 .location {
     margin: 0;
-    color: #c5f82aff;
+    color: var(--accent);
     font-weight: 700;
 }
 
@@ -56,12 +64,18 @@ main {
 }
 
 .socials {
-    width: 75%;
-    margin-bottom: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
 }
 
-.socials * {
-    background-color:#333333ff;
+.socials > a {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    background-color: var(--button-bg);
     text-align: center;
     border-radius: 5px;
     padding: 1em 0;
@@ -71,15 +85,15 @@ main {
 }
 
 
-.socials *:active, .socials *:focus {
-  background-color: #c5f82aff;
+.socials a :active {
+  background-color: var(--accent);
   color: black;
   transform: scale(1.03);
 }
 
 @media (hover: hover) and (pointer: fine) {
 .socials *:hover {
-    background-color: #c5f82aff;
+    background-color: var(--accent);
     color: black;
     transform: scale(1.05);
 }
