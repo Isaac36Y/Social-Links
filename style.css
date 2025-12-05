@@ -71,7 +71,7 @@ main {
 }
 
 
-.socials *:active {
+.socials *:active, .socials *:focus {
   background-color: #c5f82aff;
   color: black;
   transform: scale(1.03);
