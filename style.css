@@ -1,0 +1,80 @@
+body {
+    background-color: #141414ff;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 14px;
+    ;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0
+}
+
+.container {
+    max-width: 40%;
+    height: auto;
+    background-color: #1f1f1fff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.container * {
+    flex-shrink: 1;
+}
+
+.profile-pic {
+    width: 6em;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+
+.my-info {
+    text-align: center;
+    margin: 0;
+}
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin: 1em 0 0.3em 0;
+}
+
+.location {
+    margin: 0;
+    color: #c5f82aff;
+    font-weight: 700;
+}
+
+.bio {
+    margin-top: 2.5em;
+    color: #6d6d6d;
+    padding: 0 2em;
+}
+
+.socials {
+    width: 75%;
+    margin-bottom: 2em;
+}
+
+.socials * {
+    background-color:#333333ff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1em 0;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.socials *:hover {
+    background-color: #c5f82aff;
+    color: black;
+    transform: scale(1.05);
+}
